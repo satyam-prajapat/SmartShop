@@ -24,7 +24,7 @@ function Nav() {
         try {
             const result = await axios.get(serverUrl + "/api/auth/logout" , {withCredentials:true})
             console.log(result.data)
-            getCurrentUser()
+           
             navigate("/login")
         } catch (error) {
             console.log(error)
@@ -36,7 +36,7 @@ function Nav() {
 
         <div className='w-[20%] lg:w-[30%] flex items-center justify-start   gap-[10px] '>
             <img src={logo} alt="" className='w-[30px]' />
-            <h1 className='text-[25px] text-[black] font-sans '>OneCart</h1>
+            <h1 className='text-[25px] text-[black] font-sans '>Smartshop</h1>
         </div>
         <div className='w-[50%] lg:w-[40%] hidden md:flex'>
             <ul className='flex items-center justify-center gap-[19px] text-[white] '>
